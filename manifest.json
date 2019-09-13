@@ -10,14 +10,13 @@
         "128": "icons/icon128.png"
     },
     "browser_action":{
-        "default_icon": "icon32.png",
+        "default_icon": "icons/icon32.png",
         "default_popup": "popup/popup.html"
     },
     "content_scripts": [ 
         {
           "matches": ["*://*.youtube.com/*"],
-          "js": ["content_scripts/index.js"],
-          "css": ["content_scripts/style.css"]
+          "js": ["content_script/base_script.js"]
         }
       ],
       "background" :{
